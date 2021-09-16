@@ -1,0 +1,4 @@
+curl -LO https://its-pointless.github.io/setup-pointless-repo.sh
+bash setup-pointless-repo.sh
+pkg install portaudio
+pip install pyaudio

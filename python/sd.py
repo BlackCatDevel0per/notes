@@ -6,5 +6,8 @@ def download(url, out=None, bar=None):
   if out==None:
     outfile=url.split("/")
     out=outfile[-1]
-  open(out, 'wb').write(r.content)
+  fn = open(out, 'wb')
+  fn.write(r.content)
+  fn.close()
+  ###
 
